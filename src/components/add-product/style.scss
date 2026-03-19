@@ -1,0 +1,178 @@
+/* ProductForm.scss */
+
+/* Form Container */
+.product-form {
+  h1,h2,label {
+  color: #fff !important;
+  h3{
+    margin-top: 5px;
+  }
+}
+}
+.preview-section{
+  margin-bottom: 50px;
+
+  h3,p, label {
+  color: #fff !important;
+}
+  .form-container {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    button[type='submit'] {
+      width: 100%;
+      padding: 12px;
+      background-color: #28cc75;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button[type='submit']:hover {
+      background-color: #218c56; /* Darker green on hover */
+    }
+    
+
+  .selected-image{
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .image-slider{
+    margin: 0 auto;
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+      cursor: pointer;
+  }
+  /* Form Groups */
+  .form{
+    &-group{
+      margin-bottom: 1.5rem;
+      label{
+        font-weight: 600;
+        color: #555;
+        font-size: 16px;
+      }
+    }
+    &-control {
+      border-radius: 4px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s ease-in-out;
+      &:focus{
+        border-color: #28cc75; /* Green border on focus */
+        box-shadow: 0 0 5px rgba(40, 204, 117, 0.4);
+      }
+      &.is-invalid {
+        border-color: #e74c3c !important; /* Red border for invalid fields */
+      }
+      &-feedback {
+        font-size: 12px;
+        color: #e74c3c;
+        margin-top: 5px;
+      }
+      
+    }
+  }
+
+  .image-preview-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .image-preview-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  
+  /* Submit Button */
+  }
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+  }
+}
+.product-form {
+  background: #1D1D1D !important;
+  color: #fff !important;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+
+.product-form .form-control {
+  background: #fff !important;
+  // color: #1D1D1D !important;
+  border-radius: 6px;
+}
+
+.product-form .btn-primary {
+  background: #BD0000 !important;
+  border: none;
+}
+
+.product-form .btn-primary:hover {
+  background: darkred !important;
+}
+
+.product-form .selected-image {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+}
+
+.product-form .selected-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.product-form .image-slider {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.product-form .image-preview-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.product-form .image-preview-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.product-form .preview-section {
+  color: #1D1D1D;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .product-form {
+    padding: 15px;
+  }
+}

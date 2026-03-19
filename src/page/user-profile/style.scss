@@ -1,0 +1,269 @@
+.user-page {
+  padding: 40px 0;
+
+  &-section {
+    min-height: 60vh;
+  }
+   .card{
+    background-color: #1D1D1D;
+    border: none;
+  }
+  &__content-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  &__menu-container {
+    display: flex;
+    // background: white;
+    justify-content: flex-end;
+  }
+
+  &__menu {
+    width: 100%;
+    max-width: 250px;
+    max-height: 650px;
+    border-radius: 12px;
+    border: 1px solid white !important;
+    color: white !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+  &__avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .nav-pills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-pills .nav-link {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    &.active{
+      background: #e4e3e3 !important;
+      color: #BD0000 !important;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  
+  }
+
+  &__logout {
+    background: #BD0000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+  }
+
+  &__logout:hover {
+    background: darkred;
+  }
+}
+.profile-stats {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: white;
+  text-align: center;
+
+  .stats-number {
+    font-size: 1.5rem;
+  }
+
+  .progress {
+    height: 20px;
+    font-size: 14px;
+  }
+}
+.open-reviews{
+  background: #e4c137 !important;
+  font-weight: bold !important;
+}.user-page__avatar-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.user-page__avatar {
+  width: 120px;
+  height: 120px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.user-page__avatar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.user-page__avatar-container:hover .user-page__avatar-overlay {
+  opacity: 1;
+}
+
+.user-page__avatar-icon {
+  color: white;
+  font-size: 24px;
+}
+
+
+.change-password-form,
+.change-address-form,
+.payment-details-form,
+.personal-info-form,
+.profile-stats,
+.sales-history,
+.purchase-history
+ {
+  background: #1D1D1D !important;
+  color: #fff !important;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.change-password-form h2,
+.change-address-form h2,
+.payment-details-form h2,
+.personal-info-form h2,
+.profile-stats h2,
+.sales-history h2,
+.purchase-history h2,
+.change-password-form label,
+.change-address-form label,
+.payment-details-form label,
+.personal-info-form label,
+.profile-stats label,
+.sales-history label,
+.purchase-history label{
+  color: #fff !important;
+}
+
+.change-password-form .form-control,
+.change-address-form .form-control,
+.payment-details-form .form-control,
+.personal-info-form .form-control,
+.sales-history .form-control,
+.purchase-history .form-control {
+  background: #fff !important;
+  color: #1D1D1D !important;
+  border-radius: 6px;
+}
+
+.change-password-form .btn-success,
+.change-address-form .btn-success,
+.payment-details-form .btn-success,
+.personal-info-form .btn-success,
+.sales-history .btn-success,
+.purchase-history .btn-success {
+  background: #BD0000 !important;
+  border: none;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  min-width: 200px;
+  margin-top: 20px;
+}
+
+.change-password-form .btn-success:hover,
+.change-address-form .btn-success:hover,
+.payment-details-form .btn-success:hover,
+.personal-info-form .btn-success:hover,
+.sales-history .btn-success:hover,
+.purchase-history .btn-success:hover {
+  background: darkred !important;
+ 
+}
+
+.user-page__content{
+  
+   .active{
+    color: #000000 !important;
+  }
+  .history{
+    &-title, &-links{
+    color: #fff ;
+    }
+    &-links{
+      &:hover{
+        color: #BD0000;
+      }
+      }
+  }
+  .status-text{
+    color: #fff;
+  }
+}
+.user-page__menu {
+
+
+  .navbar-toggler {
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 10px;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  }
+  .navbar-collapse {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .nav-link {
+    color: #fff;
+    text-align: center;
+
+    &.active {
+      background: #e4e3e3 !important;
+      color: #BD0000 !important;
+      font-weight: bold;
+    }
+    &:hover{
+      background: #e4e3e3 !important;
+      color: #BD0000 !important;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  }
+}
+
+// Стили для меньших экранов
+@media (max-width: 992px) {
+  .user-page__menu {
+    max-width: 100%;
+    max-height: none;
+    margin-bottom: 20px;
+
+    .user-page__nav {
+      justify-content: center;
+    }
+  }
+}

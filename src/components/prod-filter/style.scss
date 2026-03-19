@@ -1,0 +1,78 @@
+.product-filter {
+    background-color: #f8f9fa;
+    border-left: 1px solid #e0e0e0;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-filter h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .product-filter {
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+  }
+  .product-filter {
+    // background-color: #1D1D1D;
+    border-left: 1px solid #BD0000;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(189, 0, 0, 0.4);
+    padding: 20px;
+  }
+
+.product-filter h4 {
+    color: #BD0000;
+}
+
+
+.my-products-active {
+  background-color: #BD0000 !important;
+  color: #fff !important;
+  border: none !important;
+
+  &:hover {
+    background-color: darkred !important;
+  }
+}
+
+.my-products-inactive {
+  background-color: transparent !important;
+  color: #BD0000 !important;
+  border: 2px solid #BD0000 !important;
+
+  &:hover {
+    background-color: #BD0000 !important;
+    color: #fff !important;
+  }
+}
+
+.filter-input:focus {
+    border-color: white;
+}
+
+.filter-checkbox:checked {
+    background-color: #BD0000;
+    border-color: white;
+}
+.liked-button {
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.liked-button:hover {
+  background-color: #BD0000 !important;
+  color: white !important;
+}

@@ -1,0 +1,34 @@
+.profile-stats {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: white;
+    text-align: center;
+  
+    .stats-number {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #BD0000;
+    }
+  
+    .progress {
+      height: 20px;
+      font-size: 14px;
+    }
+  
+    .react-stars {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .btn-primary {
+      background-color: #BD0000;
+      border-color: #BD0000;
+    }
+  
+    .btn-primary:hover {
+      background-color: darkred;
+    }
+  }
+  

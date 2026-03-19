@@ -1,0 +1,9 @@
+#root{
+    padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+    #root{
+        padding-top: 120px;
+    }
+}

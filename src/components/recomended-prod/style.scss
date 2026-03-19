@@ -1,0 +1,87 @@
+/* style.scss */
+
+/* Container styling for the recommended products section */
+.recommended-products-container {
+  padding-top: 0;
+  padding-bottom: 20px;
+
+  .image-slider{
+    height: 150px;
+  }
+}
+
+/* Styling for the individual product cards */
+.product-card {
+  // height: 100%;
+  // border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Image styling inside the card */
+.product-card-img {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.discount-card-bg{
+  border-bottom: 3px solid #ff5722;
+}
+.recomended-card-bg{
+  border-bottom: 3px solid #007bff;
+}
+/* Badge for "Recommended" product */
+.recommended-badge {
+  position: absolute;
+  top: 21px;
+  left: -29px;
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 5px 20px;
+  transform: rotate(-45deg);
+}
+
+/* Body of the product card */
+.product-card-body {
+  text-align: center;
+
+  .product-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: clamp(12px, 10px, 1.2rem); /* Адаптивное изменение размера */
+    text-wrap: balance; /* Балансирует перенос строк */
+    word-wrap: break-word; /* Переносит длинные слова */
+    overflow-wrap: break-word;
+    height: 30px;
+  }
+
+  .product-description {
+    font-size: clamp(12px, 10px, 18px); /* Адаптивное изменение размера */
+    text-wrap: balance; /* Балансирует перенос строк */
+    word-wrap: break-word; /* Переносит длинные слова */
+    overflow-wrap: break-word;
+    color: #6c757d;
+    height: 40px;
+  }
+
+  .product-price {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Footer buttons section */
+

@@ -1,0 +1,31 @@
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.product-list-card{
+  margin-bottom: 20px;
+  .card{
+    &-img-top {
+      object-fit: cover;
+      height: 200px;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      transform: translateY(-10px);
+      transition: transform 0.3s ease-in-out;
+    }
+    &:hover .card-img-top {
+      transform: scale(1.1);
+    }
+ 
+    &-body{
+      height: 150px;
+      overflow-y: auto;
+  
+    }
+  }
+  
+}
+
+

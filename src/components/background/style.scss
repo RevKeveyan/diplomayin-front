@@ -1,0 +1,38 @@
+.background-container {
+    position: fixed;
+    // top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+    background: #cecdcd;
+    z-index: -1;
+    border: 2px solid #ff0000;
+}
+
+/* Breakpoints like Bootstrap */
+@media (min-width: 576px) {
+  .background-container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .background-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .background-container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .background-container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .background-container {
+    max-width: 1320px;
+  }
+}

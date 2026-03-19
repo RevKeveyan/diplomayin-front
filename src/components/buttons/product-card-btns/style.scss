@@ -1,0 +1,70 @@
+.product-card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+  
+    .btn {
+      font-weight: bold;
+      width: 100%;
+      margin: 0 5px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+  
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    .btn-outline-success:hover {
+      background-color: #4caf50;
+      color: #fff;
+    }
+  
+    .btn-outline-danger:hover {
+      background-color: #f44336;
+      color: #fff;
+    }
+  
+    .btn-outline-primary:hover {
+      background-color: #2196f3;
+      color: #fff;
+    }
+    .like-btn {
+        margin: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: red;
+        width: 37px;
+        border-radius: 50%;
+        padding: 5px;
+        background: #ffffff;
+    }
+  }
+  .like-btn {
+    margin: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 37px;
+    height: 37px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: red;
+    background: #ffffff;
+  
+    &.liked {
+      background: red;
+      color: white;
+  
+      svg {
+        fill: white;
+      }
+    }
+  }
+  
+  

@@ -1,0 +1,32 @@
+.modal-header {
+    background-color: #BD0000;
+    color: white;
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  .list-group-item {
+    border: none;
+  }
+  
+  .btn-success {
+    background-color: #BD0000;
+    border: none;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: darkred;
+    }
+  }
+  

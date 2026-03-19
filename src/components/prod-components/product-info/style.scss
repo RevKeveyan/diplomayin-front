@@ -1,0 +1,90 @@
+.main-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .thumbnail {
+    transition: transform 0.2s;
+  }
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+  .product-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-info-left {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  .product-info-right {
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-muted {
+    max-width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+  
+    // Кастомный скроллбар — тонкий, красно-чёрный
+    scrollbar-width: thin; // Firefox
+    scrollbar-color: #BD0000 #CECDCD;
+  
+    &::-webkit-scrollbar {
+      width: 6px; // Тонкий скролл
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: #1D1D1D; // Тёмный фон трека
+      border-radius: 4px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #BD0000; // Красный ползунок
+      border-radius: 4px;
+      border: 1px solid #1D1D1D;
+    }
+  
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: darkred; // Более тёмный при наведении
+    }
+  }
+  .responsive-btn-text {
+    width: 170px;
+    span {
+      font-size: 1rem; // Базовый размер
+    }
+  
+    @media (max-width: 992px) {
+      span {
+        font-size: 1rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      span {
+        font-size: 0.9rem;
+      }
+    }
+  
+    @media (max-width: 576px) {
+      span {
+        font-size: 0.8rem;
+      }
+    }
+  
+    // Можно также уменьшать иконку:
+    svg {
+      font-size: 1.2rem;
+  
+      @media (max-width: 576px) {
+        font-size: 1rem;
+      }
+    }
+  }
+  
